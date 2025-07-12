@@ -1,10 +1,10 @@
 export const callDeepSeek = async (question: string, jd: string): Promise<string> => {
     try {
-      const response = await fetch('https://projectai123.services.ai.azure.com/', {
+      const response = await fetch('https://ABCD.services.ai.azure.com/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `CwSF98a0XA41PEhsE4cw6rhFXmPQGVWFllyQgLBRTc8uLtXDTPjzJQQJ99BGACYeBjFXJ3w3AAAAACOGF4ii` // Replace with real key
+          'Authorization': `Bearer YOUR_DEEPSEEK_API_KEY` // Replace with real key
         },
         body: JSON.stringify({
           model: 'deepseek-chat',
